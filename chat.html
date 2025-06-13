@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat - Marketplace</title>
+  <link rel="stylesheet" href="./style/global.css" />
+  <link rel="stylesheet" href="./style/header.css" />
+  <link rel="stylesheet" href="./style/chat.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">
+        <h1>Marketplace</h1>
+      </a>
+
+      <div class="navbar-buttons">
+        <button id="modo-comprador" class="navbar-link">Mis Conversaciones</button>
+        <button id="modo-vendedor" class="navbar-link">Mis Anuncios</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mensajes-container">
+
+    <div class="mensajes-panel vendedor-mode">
+      <aside class="panel-columna">
+        <h3>Anuncios</h3>
+        <ul class="lista">
+          <li class="selected">Bicicleta</li>
+          <li>Laptop HP</li>
+        </ul>
+      </aside>
+
+      <aside class="panel-columna">
+        <h3>Interesados</h3>
+        <ul class="lista">
+          <li class="selected">Juan García - "¿Disponible?"</li>
+          <li>Ana Medina - "Me interesa"</li>
+        </ul>
+      </aside>
+
+      <section class="chat-panel">
+        <div class="chat-header">Conversando con <strong>Juan García</strong> / <span
+            class="chat-anuncio">Bicicleta</span></div>
+        <div class="chat-mensaje">
+          <div class="mensaje mensaje-comprador">Hola, ¿está disponible?</div>
+          <div class="mensaje mensaje-vendedor">¡Hola Juan! Sí, sigue disponible. ¿Te interesa?</div>
+          <div class="mensaje mensaje-comprador">Sí, me gustaría verla hoy.</div>
+
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Escribe tu mensaje..." />
+          <button>Enviar</button>
+        </div>
+      </section>
+    </div>
+
+<div class="mensajes-panel comprador-mode hidden">
+  <aside class="panel-columna">
+    <h3>Mis Conversaciones</h3>
+    <ul class="lista">
+      <li class="selected">Bicicleta  - Anabely</li>
+      <li>Adidas Samba - Edwin</li>
+    </ul>
+  </aside>
+
+  <section class="chat-panel">
+    <div class="chat-header">
+      Conversando con <strong>Anabely</strong> /
+      <span class="chat-anuncio">Bicicleta</span>
+    </div>
+    <div class="chat-mensaje">
+      <div class="mensaje mensaje-vendedor">¡Hola! Me interesa la Bicicleta, ¿sigue disponible?</div>
+      <div class="mensaje mensaje-comprador">Sí, aun lo esta</div>
+      <div class="mensaje mensaje-vendedor">algun lugar para coordinar?</div>
+
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Escribe tu mensaje..." />
+      <button>Enviar</button>
+    </div>
+  </section>
+</div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
